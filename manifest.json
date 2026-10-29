@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CVAT 3D QC Master Tool",
+  "version": "1.0.0",
+  "description": "Công cụ kiểm định chất lượng (QC) 3D LiDAR & Bounding Box cho xe tự lái trên CVAT",
+  "author": "QC Engineer",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "optional_host_permissions": [
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "CVAT 3D QC Master Tool",
+    "default_popup": "popup.html"
+  }
+}
